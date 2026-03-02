@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RiftGuild Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="login">
+    <input id="nickname" placeholder="Enter nickname">
+    <button onclick="join()">Join</button>
+</div>
+
+<div id="game" style="display:none;">
+    <div id="chat"></div>
+    <input id="msg" placeholder="Message">
+    <button onclick="send()">Send</button>
+
+    <hr>
+
+    <input id="guildName" placeholder="Guild name">
+    <button onclick="createGuild()">Create Guild</button>
+    <button onclick="joinGuild()">Join Guild</button>
+
+    <hr>
+
+    <button onclick="attackBoss()">Attack Guild Boss</button>
+    <div id="boss"></div>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="client.js"></script>
+</body>
+</html>
